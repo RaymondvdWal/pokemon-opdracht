@@ -11,13 +11,11 @@ public class ElectricPokemon extends Pokemon{
         this.statics = statics;
     }
 
-    Pokemon electric = new Pokemon("Elektrabuzz", 45, 16, 5, 30, "Electric",
-            "input") {
-    };
 
     @Override
-    void thisPokemon() {
-        super.thisPokemon();
+   public void thisPokemon() {
+        System.out.println(announcement()+ " sends out " + getName() + " on level " + getLevel()+" "+
+                getName()+ " is a merciless "+getType()+ " pokemon");
     }
 
     public void cantMove(){

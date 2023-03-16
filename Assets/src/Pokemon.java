@@ -20,20 +20,20 @@ public abstract class Pokemon extends Trainer{
         this.type= type;
     }
 
-    void thisPokemon(){
+    public void thisPokemon(){
         System.out.println(announcement()+ " sends out " + getName() + " on level " + getLevel());
     }
 
-    int attackPokemon(){
+    public int attackPokemon(){
         return getBaseAttack()*getLevel();
     }
 
 
-    int defencePokemon(){
+    public int defencePokemon(){
         return getBaseDefence()*getLevel();
     }
 
-    int hpPokemon(){
+    public int hpPokemon(){
         return getBaseHp()*getLevel();
     }
 

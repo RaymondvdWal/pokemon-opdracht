@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Trainer {
 
-    String trainerName;
+    private String trainerName;
 
     public Trainer(String trainerName) {
         this.trainerName = trainerName;
@@ -14,5 +14,21 @@ public class Trainer {
         System.out.println("Hello trainer, what is your name?");
         trainerName = scanner.nextLine();
         return trainerName;
+    }
+
+    public String getTrainerName() {
+        return trainerName;
+    }
+
+    public void setTrainerName(String trainerName) {
+        this.trainerName = trainerName;
+    }
+
+    public Scanner getScanner() {
+        return scanner;
+    }
+
+    public void setScanner(Scanner scanner) {
+        this.scanner = scanner;
     }
 }

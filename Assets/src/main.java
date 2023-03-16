@@ -33,6 +33,12 @@ public class main {
         mewtwo.shadowPunch();
         mewtwo.terrain();
 
+        PsychicPokemon gengar = new PsychicPokemon("Gengar",86,21,13,18,"Ghost/Psychic",
+                "confused",false,"Raymond");
+
+        gengar.thisPokemon();
+        gengar.dreamEater();
+
 
 
 

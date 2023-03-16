@@ -10,21 +10,20 @@ public class FirePokemon extends Pokemon{
         this.magmaArmor = magmaArmor;
     }
 
-    Pokemon fire = new Pokemon("Ninetails",67,15,9,27,"Fire","input") {
-    };
 
     @Override
-    void thisPokemon() {
-        super.thisPokemon();
+    public void thisPokemon() {
+        System.out.println(announcement()+ " sends out " + getName() + " on level " + getLevel()+" "+
+                getName()+ " is a beautiful "+getType()+ " pokemon");
     }
 
     public void armor(){
-        System.out.println( fire.getName()+ " is raising his armor with " + getMagmaArmor() +", "+ fire.getName()
+        System.out.println( getName()+ " is raising his armor with " + getMagmaArmor() +", "+ getName()
         + " armor is now raised to "+ (defencePokemon()+getMagmaArmor()));
     }
 
     public void inferno(){
-        System.out.println( fire.getName()+ " unleashes a inferno and deals " + attackPokemon() + " damage to the foe "
+        System.out.println( getName()+ " unleashes a inferno and deals " + attackPokemon() + " damage to the foe "
                 + " and " + getBurn() + " burning damage.");
     }
 

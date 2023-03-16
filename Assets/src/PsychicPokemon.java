@@ -11,13 +11,11 @@ public class PsychicPokemon extends Pokemon{
         this.psychicTerrain = psychicTerrain;
     }
 
-    Pokemon psychic = new Pokemon("Mewtwo", 100, 25, 21, 35, "Psychic",
-            "input") {
-    };
 
     @Override
-    void thisPokemon() {
-        super.thisPokemon();
+   public void thisPokemon() {
+        System.out.println(announcement()+ " sends out " + getName() + " on level " + getLevel()+" "+
+                getName()+ " is a really tough "+getType()+ " pokemon");
     }
 
     public void shadowPunch(){
@@ -29,6 +27,10 @@ public class PsychicPokemon extends Pokemon{
         int raisedAttack = getBaseAttack()*5;
         psychicTerrain = attackPokemon() <= attackPokemon();
         System.out.println(getName()+ " uses his psychic terrain to raises his attack to "+ (attackPokemon()+raisedAttack));
+    }
+
+    public void dreamEater(){
+        System.out.println(getName()+" puts the foe to sleep and restores his health to "+ hpPokemon());
     }
 
     public String getConfusing() {

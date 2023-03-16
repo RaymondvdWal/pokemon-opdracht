@@ -11,21 +11,20 @@ public class WaterPokemon extends Pokemon{
         this.bubbleShield = bubbleShield;
     }
 
-    Pokemon water = new Pokemon("Blastoise", 89, 8,19,25,"Water", "input") {
-    };
 
     @Override
-    void thisPokemon() {
-        super.thisPokemon();
+   public void thisPokemon() {
+        System.out.println(announcement()+ " sends out " + getName() + " on level " + getLevel()+" "+
+                getName()+ " is a awesome "+getType()+ " pokemon");
     }
 
     public void raiseAttack(){
-        System.out.println(water.getName()+ " does a rain-dance so it started raining, "+ water.getName()+
+        System.out.println(getName()+ " does a rain-dance so it started raining, "+ getName()+
                 " attack is now increased to "+ (getRain()+attackPokemon()));
     }
 
     public void raiseArmor(){
-        System.out.println(water.getName()+ " putting up a bubble-shield, "+ water.getName() + " defense" +
+        System.out.println(getName()+ " putting up a bubble-shield, "+ getName() + " defense" +
                 " is now raised to "+ (defencePokemon()+getBubbleShield()));
     }
 
