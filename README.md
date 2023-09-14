@@ -57,7 +57,7 @@ Weet je niet wat voor variabelen je jouw klassen kunt meegeven? Denk eens aan:
 - `weight`
 - `food`
 - `sound`
-- `defence`
+- `baseDefence`
 - `attack`
 - `special`
 - `accuracy`
